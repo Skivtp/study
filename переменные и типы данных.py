@@ -5,7 +5,7 @@ print(name)
 
 # 2. Присвой переменной `age` значение `30` и выведи её тип.
 
-age = int(30)
+age = 30
 print(type(age))
 
 
