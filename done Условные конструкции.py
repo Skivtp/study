@@ -57,7 +57,7 @@ def grades(grade):
         return 'хорошо'
     elif grade == 3:
         return 'удовлетворительно'
-    elif grade == 2:
+    elif grade == 2:a2
         return 'неудвлетворительно'
     else:
         return 'no such grade'
