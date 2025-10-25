@@ -36,8 +36,7 @@ def ifnum(num):
         result = 'ноль'
     else:
         result = 'отрицательное'
-    return result
-print(ifnum(int(input('enter the number: '))))
+    return result('enter the number: '))))
 
 
      
@@ -55,7 +54,7 @@ def grades(grade):
         return 'отлично'
     elif grade == 4:
         return 'хорошо'
-    elif grade == 3:
+    elif grade == 3:@a89998538850a
         return 'удовлетворительно'
     elif grade == 2:a2
         return 'неудвлетворительно'
