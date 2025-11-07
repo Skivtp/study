@@ -1,5 +1,21 @@
 {
   "python.defaultInterpreterPath": ".venv/bin/python",
   "python.terminal.activateEnvironment": true,
-  "python.languageServer": "None"
+  "python.languageServer": "Pylance",
+  "python.testing.pytestArgs": [
+    "__pycache__"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "cornflakes.linter.run": "onType",
+  "cornflakes.linter.executablePath": "/home/shu/Seafile/study/study/.venv/bin/flake8",
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  "editor.formatOnSave": true,
+  "mypy.configFile": "mypy.ini",
+  "python.linting.mypyEnabled": true,
+  "python.linting.mypyPath": "/home/shu/Seafile/study/study/.venv/bin/mypy",
+  "python.linting.lintOnSave": true,
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "/home/shu/Seafile/study/study/.venv/bin/flake8"
 }
