@@ -19,20 +19,28 @@ class Employee:
     def get_vacation_details(
         self,
     ):
-        return f"Остаток отпускных дней: {self.remaining_vacation_days}."
+        return f'Остаток отпускных дней: {self.remaining_vacation_days}.'
 
 
 # Создайте экземпляры класса Employee с различными значениями атрибутов.
-employee1 = Employee("Роберт", "Крузо", "м")
-employee2 = Employee("Том", "ДеНиро", "ж")
+employee1 = Employee('Роберт', 'Крузо', 'м')
+employee2 = Employee('Том', 'ДеНиро', 'ж')
 # Допишите код для вывода информации о сотрудниках.
 print(
-    f" Имя: {employee1.first_name}, Фамилия: {employee1.second_name}, Пол: {employee1.gender}, Отпускных дней в году: {Employee.vacation_days}."
+    f' Имя: {employee1.first_name}, Фамилия: {employee1.second_name}, '
+    f'Пол: {employee1.gender}, '
+    f'Отпускных дней в году: {Employee.vacation_days}.'
 )
 print(
-    f" Имя: {employee2.first_name}, Фамилия: {employee2.second_name}, Пол: {employee2.gender}, Отпускных дней в году: {Employee.vacation_days}."
+    f' Имя: {employee2.first_name}, Фамилия: {employee2.second_name}, '
+    f'Пол: {employee2.gender}, '
+    f'Отпускных дней в году: {Employee.vacation_days}.'
 )
 
 employee1.consume_vacation(5)
-employee1.consume_vacation(5)
+employee1.consume_vacation(12)
+
 print(employee1.get_vacation_details())
+employee2.consume_vacation(12)
+
+print(employee2.get_vacation_details())
