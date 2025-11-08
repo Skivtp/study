@@ -10,7 +10,7 @@ class CipherMaster:
                 index = self.alphabet.index(letter)
                 new_index = (index + shift) % len(self.alphabet)
                 result += self.alphabet[new_index]
-            elif is_encrypt == False and letter in self.alphabet:
+            elif is_encrypt is False and letter in self.alphabet:
                 index = self.alphabet.index(letter)
                 new_index = (index - shift) % len(self.alphabet)
                 result += self.alphabet[new_index]
@@ -34,41 +34,3 @@ print(
         is_encrypt=False,
     )
 )
-
-
-# def cipher(self, original_text, shift):
-#         result = ''
-#         for letter in original_text.lower():
-#             if letter in self.alphabet:
-#                 index = self.alphabet.index(letter)
-#                 new_index = (index + shift) % len(self.alphabet)
-#                 result += self.alphabet[new_index]
-#             else:
-#                 result += letter
-#         return result
-
-#     def decipher(self, cipher_text, shift):
-#         result = ''
-#         for letter in cipher_text.lower():
-#             if letter in self.alphabet:
-#                 index = self.alphabet.index(letter)
-#                 new_index = (index - shift) % len(self.alphabet)
-#                 result += self.alphabet[new_index]
-#             else:
-#                 result += letter
-#         return result
-
-
-# cipher_master = CipherMaster()
-# print(
-#     cipher_master.cipher(
-#         original_text='Однажды ревьюер принял проект с первого раза, с тех пор я его боюсь',
-#         shift=2,
-#     )
-# )
-# print(
-#     cipher_master.decipher(
-#         cipher_text='Олебэи яфвнэ мроплж сэжи — э пэй рдв злййвкпш лп нвящывнэ',
-#         shift=-3,
-#     )
-# )
