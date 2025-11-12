@@ -2,6 +2,7 @@ from datetime import datetime
 from random import sample
 
 
+
 def choose_days():
     # Определяем диапазон дат первой половины месяца.
     first_month_half = list(range(1, 16))
